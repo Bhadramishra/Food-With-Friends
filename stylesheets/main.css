@@ -262,6 +262,8 @@
   display:inline-block;
   vertical-align:middle;
   left: 50%;
+  margin-left:5%;
+  margin-right:5%;
 }
 .circular_image img{
   width:50%;

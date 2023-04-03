@@ -258,11 +258,15 @@
   */
   
   /*for demo*/
+  margin-top:5%;
   display:inline-block;
   vertical-align:middle;
+  left: 50%;
 }
 .circular_image img{
   width:50%;
+  justify-content: center;
+  margin-top: 25%;
 
 
 }

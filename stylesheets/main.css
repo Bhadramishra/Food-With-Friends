@@ -182,6 +182,10 @@
       display: inline-block;
     }
   }
+
+  p {
+    display: inline-block;
+  }
   
   body {
     font-weight:600;
@@ -226,24 +230,7 @@
     transform: scale(1.2);
 }
 
-.bubble1 {
-    top: 400px;
-    left: 50px;
-  
-}
 
-.bubble2 {
-    top: 400px;
-    left: 550px;
-    
-
-}
-
-.bubble3 {
-    top: 400px;
-    right: 50px;
-    
-}
 
 .circular_image {
   width: 200px;
@@ -264,6 +251,18 @@
   left: 50%;
   margin-left:5%;
   margin-right:5%;
+}
+
+.caption {
+  display:inline-block;
+  vertical-align:middle;
+  left: 50%;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.circular_image:hover {
+  transform: scale(1.2);
 }
 .circular_image img{
   width:50%;

@@ -251,6 +251,8 @@
   left: 50%;
   margin-left:5%;
   margin-right:5%;
+  
+  
 }
 
 .caption {
@@ -268,6 +270,19 @@
   width:50%;
   justify-content: center;
   margin-top: 25%;
+  
 
 
+}
+
+.wrapper {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  
+}
+
+.text {
+  margin-top: 5px;
+  font-size: 40px;
 }

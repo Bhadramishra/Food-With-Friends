@@ -237,7 +237,7 @@
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: blue;
+  background-color: #A8C5FF;
   /* commented for demo
   float: left;
   margin-left: 125px;
@@ -263,9 +263,7 @@
   margin-right:5%;
 }
 
-.circular_image:hover {
-  transform: scale(1.2);
-}
+
 .circular_image img{
   width:50%;
   justify-content: center;
@@ -278,11 +276,15 @@
 .wrapper {
   display: inline-block;
   text-align: center;
-  margin: 10px;
+  margin: 5%;
   
 }
 
 .text {
   margin-top: 5px;
   font-size: 15px;
+}
+
+.wrapper:hover {
+  transform: scale(1.2);
 }

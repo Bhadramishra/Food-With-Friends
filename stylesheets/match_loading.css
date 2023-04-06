@@ -21,5 +21,30 @@ body {
 }
 
 h2 {
-    margin: 3%;
+    margin: 2%;
 }
+
+.cancel-button{
+    background-color: white; /* Green */
+    border: 2 black;
+    color: black;
+    padding: 15px 32px;
+    padding-top: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+  
+  .cancel-button:hover {
+    background-color: #41930b; /* Green */
+    color: white;
+    padding: 15px 32px;
+    padding-top: 1%;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+  }

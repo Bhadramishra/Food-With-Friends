@@ -24,3 +24,7 @@ function getElems() {
     document.getElementById("date").innerHTML = date;
 
 }
+
+function goHome() {
+    window.location.href = "index.html"
+}

@@ -29,6 +29,13 @@ body {
     overflow: hidden;
 }
 
+.wrapper {
+  
+  text-align: center;
+  margin: 5%;
+  
+}
+
 
 nav {
     background: none !important;

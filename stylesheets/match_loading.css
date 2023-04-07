@@ -29,13 +29,6 @@ body {
     overflow: hidden;
 }
 
-.wrapper {
-  
-  text-align: center;
-  margin: 5%;
-  
-}
-
 
 nav {
     background: none !important;
@@ -59,7 +52,7 @@ nav {
 .wrapper {
     display: inline-block;
     text-align: center;
-    /* margin: 3% */
+    margin: 1%;
     
 }
 

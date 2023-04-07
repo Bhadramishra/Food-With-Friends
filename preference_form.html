@@ -39,18 +39,19 @@
   
   <h1 style="font-size: 70px"> Let's eat!</h1>
   <!--bowdoin email-->
-  <form class="form-inline">
-    <div class="form-group mb-2">
+
+  <form action = ""class="form-inline">
+    <div class="form-group">
       <label for="exampleFormControlInput1">Bowdoin Email address:</label>
     </div>
     <div class="form-group mx-sm-3 mb-2">
       <label for="inputPassword2" class="sr-only">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="name@bowdoin.edu">
+      <input type="email" class="form-control" id="email" placeholder="name@bowdoin.edu" pattern = ".*@bowdoin.edu$" required>
     </div>
-  </form>
+    
+    <br>
 
    <!--With who-->
-  <form class="form-inline">
     <div class="form-group">
         <label for="exampleFormControlSelect1">With Who:</label>
         <select class="form-control" id="withWho">
@@ -58,62 +59,80 @@
           <option>Closefriends</option>
         </select>
       </div>
-  </form>
-   <!--Max. number of people-->
-  <form class="form-inline">
-    <div class="form-group mb-2">
+
+    <br>
+   
+    <!--Max. number of people-->
+    <div class="form-group">
         <label for="exampleFormControlInput1">Max. number of people:</label>
       </div>
       <div class="form-group mx-sm-3 mb-2">
         <label for="inputMaxnum" class="sr-only">Max. Num</label>
         <input size ="10" type="number" min = "1" class="form-control" id="inputMax" placeholder="1">
       </div>
-  </form>
-    <!--Meal-->
-  <form class="form-inline">
-    <div class="form-group">
-        <label for="exampleFormControlSelect1">Meal:</label>
-        <select class="form-control" id="meal">
-          <option>Breakfast</option>
-          <option>Lunch</option>
-          <option>Dinner</option>
-        </select>
-      </div>
-  </form>
 
-   <!--Date-->
-   <form class="form-inline">
-    <div class="form-group mb-2">
+  <br>
+
+  <!--Date-->
+    <div class="form-group">
       <label for="exampleFormControlInput1">Date:</label>
     </div>
     <div class="form-group mx-sm-3 mb-2">
       <label for="inputPassword2" class="sr-only">Email</label>
-      <input type="email" class="form-control" id="date" placeholder="MM/DD/YYYY" size ="10">
+      <input type="date" class="form-control" id="date">
     </div>
-  </form>
 
-    <!--Time-->
-  <form class="form-inline">
+    <br>
+
+    <!--Meal-->
     <div class="form-group">
-        <label for="exampleFormControlSelect1">Time:</label>
-        <select class="form-control" id="time">
-          <option>7:45 am</option>
-          <option>8.30 am</option>
-          <option>9.15 am</option>
-          <option>11.00 am</option>
-          <option>11.45 am</option>
-          <option>12.30 pm</option>
-          <option>1.15 pm</option>
-          <option>5.00 pm</option>
-          <option>5.45 pm</option>
-          <option>6.30 pm</option>
-          <option>7.15 pm</option>
+        <label for="exampleFormControlSelect1">Meal:</label>
+        <select class="form-control" id="meal">
+          <option>----</option>
         </select>
-      </div>
-  </form>
 
-  <button type="button" onclick = submitPlan() class = "submit-button">Find a match</button>
+        <label for="exampleFormControlSelect1">Time:</label>
+        <select class = "form-control" id = "time"> </select>
+      </div>
+
+  <script language = "javascript" type = "text/javascript">
+  
+    var mealTimes = {
+      Breakfast : ['7:45am', '8:30am', '9:15am'],
+      Lunch :  ['11:00am', '11:45am', '12:30pm', '1:15pm'],
+      Dinner :  ['5:00pm', '5:45pm', '6:30pm', '7:15pm']
+    };
     
+    el_meal = document.getElementById("meal"); //parent select element
+    el_time = document.getElementById("time"); //child select element
+    
+    for (key in mealTimes) { //populate the parent select element with array key
+      el_meal.innerHTML = el_meal.innerHTML + '<option>'+ key +'</option>';
+    }
+    
+    //add event listener to parent select, so that when user selects an option, child gets populate
+    el_meal.addEventListener('change', function populate_child(e){
+    el_time.innerHTML = '';
+    itm = e.target.value;
+    if(itm in mealTimes){
+        for (i = 0; i < mealTimes[itm].length; i++) {
+          el_time.innerHTML = el_time.innerHTML + '<option>'+ mealTimes[itm][i] +'</option>';
+        }
+      }
+    });
+  </script>
+
+  <br>
+
+  
+   <!-- TODO: HELP 
+  FIGURE OUT HOW TO DO THE VALIDATING ONSUBMIT STUFF
+      document.getElementById("sb").type = "submit";
+    document.getElementById("sb").submit();
+ -->
+  <button type="submit" onclick = submitPlan() class = "submit-button"> Find a match</button>
+</form>
+
   <script src="js/main.js"></script>
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

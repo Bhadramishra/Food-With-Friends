@@ -46,7 +46,14 @@
     padding-bottom: 0.5%;
 }
 
+.form-group {
+  text-align: left;
+    vertical-align:middle;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 .submit-button{
+  text-align: center !important;
   background-color: white; /* Green */
   border: 2 black;
   color: black;
@@ -57,6 +64,11 @@
   display: inline-block;
   font-size: 16px;
   border-radius: 12px;
+  position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
 }
 
 .submit-button:hover {
@@ -69,4 +81,9 @@
   display: inline-block;
   font-size: 16px;
   border-radius: 12px;
-}
+  position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+  }

@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+    .navbar{
+    border: transparent !important;
+      text-align: center !important;
+      float: none;
+      display: inline-block;
+    }
+  }
+  
+  body {
+    font-weight:600;
+    text-align:center !important;
+  }
+  
+  nav {
+    background: none !important;
+    text-transform:uppercase;
+    li {
+      margin-left: 3em;
+      margin-right: 3em;
+      a{
+        transition: .5s color ease-in-out;
+      }
+    }
+  }
+  
+  .page-title {
+    opacity: .75 !important;
+  }
+
+.jumbotron{
+    background-color: #f4dddd;
+}
+.jumbotron .container {
+    background: #f4dddd;
+}

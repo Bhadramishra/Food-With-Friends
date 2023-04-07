@@ -14,12 +14,21 @@ body {
 }
     
 .circular_image {
-    width: 200px;
-    height: 200px;
-    border-radius: 20%;
-    overflow: hidden;
-    background-color: #A8C5FF;
+    width: 300px;
+    height: 300px;
+
+
+
+
 }
+.circular_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
 
 nav {
     background: none !important;

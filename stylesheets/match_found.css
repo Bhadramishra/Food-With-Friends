@@ -42,10 +42,6 @@ body {
     margin-left:5%;
     margin-right:5%;
   }
-  
-  
-
-
 
 nav {
     background: none !important;
@@ -69,6 +65,61 @@ nav {
 .wrapper {
     display: inline-block;
     text-align: center;
-    margin: 1.5%;
-    
+    margin: 1.5%;    
 }  
+
+ .home-button{
+  text-align: center !important;
+  background-color: white; /* Green */
+  padding: 15px 32px;
+  border: 2 black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 1%; 
+}
+
+.home-button:hover{
+  text-align: center !important;
+  background-color: #7cc; /* Green */
+  padding: 15px 32px;
+  border: 2 black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 1%
+}
+
+.cancel-button{
+  text-align: center !important;
+  background-color: rgb(213, 121, 121); /* Green */
+  padding: 15px 32px;
+  border: 2 black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 1%; 
+}
+
+.cancel-button:hover{
+  text-align: center !important;
+  background-color: rgb(223, 52, 52); /* Green */
+  padding: 15px 32px;
+  border: 2 black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 1%
+}

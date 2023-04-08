@@ -42,6 +42,9 @@
             <img src="https://media.tenor.com/J-3IRSCigooAAAAM/food-eat.gif" >
         </div>
         <div class="text">Your match name </div>
+        <script>
+        document.getElementById("matchname").innerHTML = "New text!"; 
+        </script> 
     </div>
     
 
@@ -62,12 +65,27 @@
         <div class="text">You </div>
     </div>
 
-   <div class="email_match">
-        <h1 style="font-size: 15px"> Email your match </h1>
-   </div>
+    <div class="match-details">
+        <h1 id = Meal style="font-size: 15px"> Meal: </h1>
+        <h1 id = Date style="font-size: 15px"> Date: </h1>
+        <h1 id = Time style="font-size: 15px"> Time: </h1>
+        <script>
+            var mealHeader = document.getElementById("Meal");
+            mealHeader.innerHTML = mealHeader.textContent + "meal";
+            var dateHeader = document.getElementById("Date");
+            dateHeader.innerHTML = dateHeader.textContent + "date";
+            var timeHeader = document.getElementById("Time");
+            timeHeader.innerHTML = timeHeader.textContent + "time";
+        </script> 
+    </div>
 
- 
-    
+   <div class="email_match">
+        <h1 id = Email style="font-size: 15px"> Email your match: </h1>
+        <script>
+            var emailHeader = document.getElementById("Email");
+            emailHeader.innerHTML = emailHeader.textContent + "email";
+        </script>    
+   </div>
 
     <button type="button" onclick = goHome() class = "cancel-button">Return Home</button>
     <button type="button" onclick = cancelPlan() class = "cancel-button">Cancel Match</button>

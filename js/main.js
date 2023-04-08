@@ -55,6 +55,7 @@ function submitPlan() {
     
 }
 
+
 function getElems() {
     var email = localStorage.getItem("email");
     var withWho = localStorage.getItem("withWho");
@@ -129,4 +130,8 @@ function matches() {
     document.getElementById("Date").innerHTML = "Date: " + date;
     document.getElementById("Time").innerHTML = "Time: " + time;
 
+}
+
+function getMeal() {
+    window.location.href = "preference_form.html";
 }

@@ -86,14 +86,20 @@ function findMatch() {
 
 }
 
+//this is called upon match found loading
+//this is how the matches are found (it iterates through the stored users, and compares to the values in local storage)
 function matches() {
-    others = window.localStorage.getItem("users");
+    others = window.localStorage.getItem("otherUsers");
+    console.log(others);
     matches = [];
     var email = localStorage.getItem("email");
     var withWho = localStorage.getItem("withWho");
     var inputMax = localStorage.getItem("inputMax");
     var time = localStorage.getItem("time");
     var date = localStorage.getItem("date");
+    var meal = localStorage.getItem("meal");
+    console.log(date);
+    console.log(meal);
     for (let i = 0; i < others.length; i++) {
         if (matches.length == inputMax) {
             break; 
@@ -117,9 +123,10 @@ function matches() {
         } 
     }
 
-    var meal = localStorage.getItem("meal");
-    document.getElementById("meal").innerHTML = "Meal: " + meal;
-    document.getElementById("date").innerHTML = "Date" + date;
-    document.getElementById("time").innerHTML = "Time" + time;
+    document.getElementById("matches").innerHTML = matches;
+    console.log(matches);
+    document.getElementById("Meal").innerHTML = "Meal: " + meal;
+    document.getElementById("Date").innerHTML = "Date: " + date;
+    document.getElementById("Time").innerHTML = "Time: " + time;
 
 }

@@ -33,7 +33,26 @@ function submitPlan() {
     window.localStorage.setItem('inputMax',   document.getElementById("inputMax").value);
     window.localStorage.setItem('time',  document.getElementById("time").value);
     window.localStorage.setItem('date',  document.getElementById("date").value);
-    window.location.replace("review.html");
+
+    var email = localStorage.getItem("email");
+    var withWho = localStorage.getItem("withWho");
+    var meal = localStorage.getItem("meal");
+    var inputMax = localStorage.getItem("inputMax");
+    var time = localStorage.getItem("time");
+    var date = localStorage.getItem("date");
+
+    if (!email.includes("@bowdoin.edu")) {
+        alert("Email must be a valid Bowdoin email!")
+        return false;
+    }
+    if (email == "" || withWho == null || meal == null || inputMax == null || time == null || date == "") {
+        alert("All fields are required!")
+        return false;
+    }
+    else {
+        window.location.replace("review.html");
+    }
+    
 }
 
 function getElems() {

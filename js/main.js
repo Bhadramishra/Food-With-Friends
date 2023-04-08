@@ -94,9 +94,13 @@ function submitPlan() {
     var email = document.getElementById("email").value;
     var who = document.getElementById("withWho").value;
     var date = document.getElementById("date").value;
+    var meal = document.getElementById("meal").value
   
-
-    if(date == "" || email == "" || who == "null"){
+    if (!email.includes("@bowdoin.edu")) {
+        alert("You need to add a bowdoin email!");
+        return false;
+    }
+    if(date == "" || email == "" || who == "null" || meal == "null"){
         alert("All fields are required!");
         return false;
     }

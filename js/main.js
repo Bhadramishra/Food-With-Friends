@@ -91,8 +91,39 @@ function submitPlan() {
     window.localStorage.setItem('inputMax',   document.getElementById("inputMax").value);
     window.localStorage.setItem('time',  document.getElementById("time").value);
     window.localStorage.setItem('date',  document.getElementById("date").value);
-    window.location.replace("review.html");
+    var email = document.getElementById("email").value;
+    var who = document.getElementById("withWho").value;
+    var date = document.getElementById("date").value;
+  
+
+    if(date == "" || email == "" || who == "null"){
+        alert("All fields are required!");
+        return false;
+    }
+    
+    else{
+        window.location.replace("review.html");
+    }
+    
 }
+
+
+function validate(){
+    var email = document.getElementById("email").value;
+    var who = document.getElementById("withWho").value;
+    var date = document.getElementById("date").value;
+  
+
+    if(date == "" || email == "" || who == "null"){
+        alert("All fields are required!");
+        return false;
+    }
+    
+    else{
+        window.location.replace("review.html");
+    }
+}
+
 
 function getElems() {
     var email = localStorage.getItem("email");
@@ -115,5 +146,5 @@ function goHome() {
 }
 
 function cancelPlan() {
-    
+
 }

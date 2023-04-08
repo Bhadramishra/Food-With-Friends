@@ -36,10 +36,10 @@
     </center> 
     </div>
   </div>
-  
+
   <h1 style="font-size: 70px"> Let's eat!</h1>
   <!--bowdoin email-->
-
+  <center>
   <form action = ""class="form-inline">
     <div class="form-group">
       <label for="exampleFormControlInput1">Bowdoin Email address:</label>
@@ -65,10 +65,7 @@
     <!--Max. number of people-->
     <div class="form-group">
         <label for="exampleFormControlInput1">Max. number of people:</label>
-      </div>
-      <div class="form-group mx-sm-3 mb-2">
-        <label for="inputMaxnum" class="sr-only">Max. Num</label>
-        <input size ="10" type="number" min = "1" class="form-control" id="inputMax" placeholder="1">
+        <input size ="10" type="number" min = "1" class="form-control" id="inputMax" placeholder="1" required>
       </div>
 
   <br>
@@ -79,7 +76,7 @@
     </div>
     <div class="form-group mx-sm-3 mb-2">
       <label for="inputPassword2" class="sr-only">Email</label>
-      <input type="date" class="form-control" id="date">
+      <input type="date" class="form-control" id="date" required>
     </div>
 
     <br>
@@ -87,13 +84,15 @@
     <!--Meal-->
     <div class="form-group">
         <label for="exampleFormControlSelect1">Meal:</label>
-        <select class="form-control" id="meal">
+        <select class="form-control" id="meal" required>
           <option>----</option>
         </select>
 
         <label for="exampleFormControlSelect1">Time:</label>
-        <select class = "form-control" id = "time"> </select>
+        <select class = "form-control" id = "time" required> </select>
       </div>
+
+    </center>
 
   <script language = "javascript" type = "text/javascript">
   
@@ -130,7 +129,8 @@
       document.getElementById("sb").type = "submit";
     document.getElementById("sb").submit();
  -->
-  <button type="submit" onclick = submitPlan() class = "submit-button"> Find a match</button>
+  <button type="button" onclick = submitPlan() class = "submit-button"> Find a match</button>
+
 </form>
 
   <script src="js/main.js"></script>

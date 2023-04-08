@@ -42,6 +42,9 @@
             <img src="https://media.tenor.com/J-3IRSCigooAAAAM/food-eat.gif" >
         </div>
         <div class="text">Your match name </div>
+        <script>
+        document.getElementById("matchname").innerHTML = "New text!"; 
+        </script> 
     </div>
     
 
@@ -60,6 +63,20 @@
             <img src="https://media2.giphy.com/media/AYjvccWdysTz3Rk9m4/giphy.gif" >
         </div>
         <div class="text">You </div>
+    </div>
+
+    <div class="match-details">
+        <h1 id = Meal style="font-size: 15px"> Meal: </h1>
+        <h1 id = Date style="font-size: 15px"> Date: </h1>
+        <h1 id = Time style="font-size: 15px"> Time: </h1>
+        <script>
+            var mealHeader = document.getElementById("Meal");
+            mealHeader.innerHTML = mealHeader.textContent + "meal";
+            var dateHeader = document.getElementById("Date");
+            dateHeader.innerHTML = dateHeader.textContent + "date";
+            var timeHeader = document.getElementById("Time");
+            timeHeader.innerHTML = timeHeader.textContent + "time";
+        </script> 
     </div>
 
    <div class="email_match">

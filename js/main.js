@@ -132,6 +132,11 @@ function getElems() {
     var inputMax = localStorage.getItem("inputMax");
     var time = localStorage.getItem("time");
     var date = localStorage.getItem("date");
+
+    //display date in MM/DD/YYYY format
+    var dateSplit = date.split("-");
+    date = dateSplit[1]+"/"+dateSplit[2]+"/"+dateSplit[0]
+
     document.getElementById("email").innerHTML = email;
     document.getElementById("withWho").innerHTML = withWho;
     document.getElementById("meal").innerHTML = meal;

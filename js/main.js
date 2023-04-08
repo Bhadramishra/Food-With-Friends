@@ -7,65 +7,6 @@ class user {
       this.date = date;  
       this.time = time; 
     }
-
-    set name(name) {
-        this.name = name; 
-
-    }
-
-    set withWho(withWho) {
-        this.withWho = withWho; 
-
-    }
-
-    set numPpl(numPpl) {
-        this.numPpl = numPpl;
-
-    }
-
-    set email(email) {
-        this.email = email;
-
-    }
-
-    set date(date) {
-        this.date = date; 
-
-    }
-
-    set time(time) {
-        this.time = time; 
-    }
-
-    get name() {
-        return this.name; 
-    }
-
-    get withWho() {
-        return this.withWho;
-    }
-    
-
-    get numPpl() {
-        return this.numPpl;
-
-    }
-
-    get email() {
-        return this.email; 
-
-
-    }
-
-    get date() {
-        return this.date;
-
-    }
-
-    get time() {
-        return this.time; 
-    }
-
   }
   
   Kavya = new user("Kavya", "Close", 5, "k@bowdoin.edu", "2023-04-08", "11:00am" );
@@ -79,8 +20,9 @@ class user {
     //first somehow get from API
     //store everyone who has submitted something (made post request) in a list
     const users = [Kavya, Bhadra, Film, Diyaa]; 
-    window.localStorage.setItem("otherUsers", users); 
-    console.log(localStorage.getItem(users));
+    console.log(users);
+    window.localStorage.setItem("otherUsers", JSON.stringify(users)); 
+    console.log(localStorage.getItem("otherUsers"));
   }
 
 
@@ -91,43 +33,8 @@ function submitPlan() {
     window.localStorage.setItem('inputMax',   document.getElementById("inputMax").value);
     window.localStorage.setItem('time',  document.getElementById("time").value);
     window.localStorage.setItem('date',  document.getElementById("date").value);
-    var email = document.getElementById("email").value;
-    var who = document.getElementById("withWho").value;
-    var date = document.getElementById("date").value;
-    var meal = document.getElementById("meal").value
-  
-    if (!email.includes("@bowdoin.edu")) {
-        alert("You need to add a bowdoin email!");
-        return false;
-    }
-    if(date == "" || email == "" || who == "null" || meal == "null"){
-        alert("All fields are required!");
-        return false;
-    }
-    
-    else{
-        window.location.replace("review.html");
-    }
-    
+    window.location.replace("review.html");
 }
-
-
-function validate(){
-    var email = document.getElementById("email").value;
-    var who = document.getElementById("withWho").value;
-    var date = document.getElementById("date").value;
-  
-
-    if(date == "" || email == "" || who == "null"){
-        alert("All fields are required!");
-        return false;
-    }
-    
-    else{
-        window.location.replace("review.html");
-    }
-}
-
 
 function getElems() {
     var email = localStorage.getItem("email");
@@ -136,11 +43,6 @@ function getElems() {
     var inputMax = localStorage.getItem("inputMax");
     var time = localStorage.getItem("time");
     var date = localStorage.getItem("date");
-
-    //display date in MM/DD/YYYY format
-    var dateSplit = date.split("-");
-    date = dateSplit[1]+"/"+dateSplit[2]+"/"+dateSplit[0]
-
     document.getElementById("email").innerHTML = email;
     document.getElementById("withWho").innerHTML = withWho;
     document.getElementById("meal").innerHTML = meal;
@@ -155,5 +57,50 @@ function goHome() {
 }
 
 function cancelPlan() {
+    
+}
+
+//this is called from the review page
+//it redirects to match loading page
+function findMatch() {
+    window.location.href = "match_loading.html"; 
+
+}
+
+function matches() {
+    others = window.localStorage.getItem("users");
+    matches = [];
+    var email = localStorage.getItem("email");
+    var withWho = localStorage.getItem("withWho");
+    var inputMax = localStorage.getItem("inputMax");
+    var time = localStorage.getItem("time");
+    var date = localStorage.getItem("date");
+    for (let i = 0; i < others.length; i++) {
+        if (matches.length == inputMax) {
+            break; 
+        }
+        
+        if (others[i].withWho == "Close") {
+            continue;
+        }
+
+        if (others[i].date != date) {
+            continue;
+        }
+
+        if (others[i].time != time) {
+            continue;
+        }
+
+        //when date and time match 
+        if (others[i].inputMax < matches.length) {
+            matches.push(others[i]);
+        } 
+    }
+
+    var meal = localStorage.getItem("meal");
+    document.getElementById("meal").innerHTML = "Meal: " + meal;
+    document.getElementById("date").innerHTML = "Date" + date;
+    document.getElementById("time").innerHTML = "Time" + time;
 
 }

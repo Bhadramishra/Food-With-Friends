@@ -15,7 +15,7 @@
 	
 </head>
 
-<body>
+<body onload = matches()>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
@@ -66,9 +66,9 @@
     </div>
 
     <div class="match-details">
-        <h1 id = Meal style="font-size: 15px"> Meal: </h1>
-        <h1 id = Date style="font-size: 15px"> Date: </h1>
-        <h1 id = Time style="font-size: 15px"> Time: </h1>
+        <h1 id = Meal style="font-size: 15px"> <div id = meal> </div> </h1>
+        <h1 id = Date style="font-size: 15px"> <div id = "date"> </div> </h1>
+        <h1 id = Time style="font-size: 15px"> <div id = time> </div></h1>
         <script>
             var mealHeader = document.getElementById("Meal");
             mealHeader.innerHTML = mealHeader.textContent + "meal";
@@ -85,7 +85,7 @@
             var emailHeader = document.getElementById("Email");
             emailHeader.innerHTML = emailHeader.textContent + "email";
         </script>    
-   </div>
+   </div> 
 
     <button type="button" onclick = goHome() class = "home-button">Return Home</button>
     <button type="button" onclick = cancelPlan() class = "cancel-button">Cancel Match</button>

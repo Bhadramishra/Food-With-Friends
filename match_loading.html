@@ -14,7 +14,14 @@
     <link rel="stylesheet" href="stylesheets/match_loading.css">
 	
 </head>
+<script>
 
+setTimeout(function () {
+    window.location.href = "match_found.html"; //will redirect to your blog page (an ex: blog.html)
+  }, 5000); //will call the function after 2 secs.
+
+
+</script>
 <body>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
@@ -52,7 +59,8 @@
     </div>
     
 
-    <button type="button" onclick = cancelPlan() class = "cancel-button">Find a match</button>
+    <!-- TODO CANCEL PLAN METHOD -->
+    <button type="button" onclick = cancelPlan() class = "cancel-button">Cancel</button>
 
 
     <script src="js/main.js"></script>

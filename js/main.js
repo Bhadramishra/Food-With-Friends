@@ -34,6 +34,7 @@ function submitPlan() {
     window.localStorage.setItem('time',  document.getElementById("time").value);
     window.localStorage.setItem('date',  document.getElementById("date").value);
 
+    console.log(document.getElementById("email"))
     var email = localStorage.getItem("email");
     var withWho = localStorage.getItem("withWho");
     var meal = localStorage.getItem("meal");
@@ -55,6 +56,19 @@ function submitPlan() {
     
 }
 
+<<<<<<< Updated upstream
+=======
+function cancelPlan() {
+    localStorage.removeItem("email");
+    localStorage.removeItem("withWho");
+    localStorage.removeItem("meal");
+    localStorage.removeItem("inputMax");
+    localStorage.removeItem("time");
+    localStorage.removeItem("date");
+    window.location.replace("index.html");
+
+}
+>>>>>>> Stashed changes
 
 function getElems() {
     var email = localStorage.getItem("email");
@@ -76,9 +90,7 @@ function goHome() {
     window.location.href = "index.html"
 }
 
-function cancelPlan() {
-    
-}
+
 
 //this is called from the review page
 //it redirects to match loading page

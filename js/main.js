@@ -94,6 +94,13 @@ function goHome() {
     window.location.href = "index.html"
 }
 
+function schedulePage() {
+    window.location.href = "meal-schedule.html"
+}
+
+function closeFriends() {
+    window.location.href = "close_friends.html"
+}
 
 
 //this is called from the review page

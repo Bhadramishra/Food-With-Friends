@@ -101,7 +101,7 @@
     vertical-align: middle;
     position:relative;
     box-shadow: 0 0 1px rgba(0,0,0,0);
-    tranform: translateZ(0);
+    transform: translateZ(0);
     transition-duration: .3s;
     transition-property:transform;
   }
@@ -192,16 +192,20 @@
     text-align:center !important;
   }
   
-  nav {
+  nav, header {
     background: none !important;
-    text-transform:uppercase;
-    li {
-      margin-left: 3em;
-      margin-right: 3em;
-      a{
-        transition: .5s color ease-in-out;
-      }
-    }
+    text-transform: uppercase;
+  }
+  
+  nav li,
+  header li {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  
+  nav li a,
+  header li a {
+    transition: .5s color ease-in-out;
   }
   
   .page-title {

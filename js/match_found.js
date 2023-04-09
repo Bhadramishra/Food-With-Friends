@@ -48,6 +48,7 @@ function matches() {
         } 
     }
 
+
     var names = "";
     for (i = 0; i < matches.length; i++) {
         var nameM = matches[i].name;
@@ -65,4 +66,10 @@ function matches() {
     document.getElementById("Meal").innerHTML = "Meal: " + meal;
     document.getElementById("Date").innerHTML = "Date: " + date;
     document.getElementById("Time").innerHTML = "Time: " + time;
+   
+    if (matches.length == 0) {
+        window.location.href = "match_not_found.html";
+        
+    }
+
 }

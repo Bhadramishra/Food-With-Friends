@@ -13,6 +13,7 @@ class user {
   Bhadra = new user("Bhadra", "Anyone", 2, "b@bowdoin.edu", "2023-05-08", "11:00am" );
   Film = new user("Film", "Anyone", 1, "f@bowdoin.edu", "2023-04-08", "11:45am" );
   Diyaa = new user("Diyaa", "Anyone", 10, "d@bowdoin.edu", "2023-04-08", "7:00am" );
+  Saraswati = new user("Saraswati", "Anyone", 2, "s@bowdoin.edu", "2023-05-08", "11:00am" );
 
     
   function otherUsers() {

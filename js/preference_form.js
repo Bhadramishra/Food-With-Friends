@@ -23,6 +23,10 @@ function submitPlan() {
         alert("All fields are required!")
         return false;
     }
+    else if (meal < 1) {
+        alert("Number of other people needs to be at least 1.")
+        return false;
+    }
     else {
     window.location.replace("review.html");
     }

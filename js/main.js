@@ -145,12 +145,11 @@ function matches() {
         } 
     }
 
-    console.log(matches);
-
     var names = "";
     for (i = 0; i < matches.length; i++) {
-        var name = matches[i].name;
-        names += "<li>"+name+"</li>";
+        var nameM = matches[i].name;
+        var emailM = matches[i].email;
+        names += "<li>"+nameM + " " + emailM +"</li>";
 
     }
 

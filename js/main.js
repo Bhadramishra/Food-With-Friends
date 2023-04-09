@@ -27,6 +27,7 @@ class user {
 
 
 function submitPlan() {
+    window.localStorage.setItem('name',  document.getElementById("name").value);
     window.localStorage.setItem('email',  document.getElementById("email").value);
     window.localStorage.setItem('withWho', document.getElementById("withWho").value);
     window.localStorage.setItem('meal',  document.getElementById("meal").value);
@@ -119,6 +120,7 @@ function matches() {
     console.log(others);
     let matches = [];
 
+    var myName = localStorage.getItem("name");
     var email = localStorage.getItem("email");
     var withWho = localStorage.getItem("withWho");
     var inputMax = localStorage.getItem("inputMax");
@@ -160,6 +162,7 @@ function matches() {
 
     }
 
+    document.getElementById("you").innerHTML = myName;
     document.getElementById("matches").innerHTML = names;
     document.getElementById("Meal").innerHTML = "Meal: " + meal;
     document.getElementById("Date").innerHTML = "Date: " + date;

@@ -124,12 +124,14 @@ nav {
   margin: 1%
 }
 
-/**
-HI FILM can you please edit this so that it looks the way you want
-this is the matches name list :)))
-*/
+
 li {  
   list-style-type: none;  
+  font-weight: bold;  
+  font-size: 20px;  
+}  
+
+you {  
   font-weight: bold;  
   font-size: 20px;  
 }  

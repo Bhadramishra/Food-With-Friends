@@ -27,3 +27,8 @@ function findMatch() {
 
 }
 
+function editPlan() {
+    window.location.href = "preference_form.html"; 
+}
+
+

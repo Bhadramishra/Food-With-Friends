@@ -67,7 +67,7 @@ header li a {
 }
 
 .cancel-button{
-    background-color: white; /* Green */
+    background-color: rgb(213, 121, 121); 
     border: 2 black;
     color: black;
     padding: 15px 32px;
@@ -80,7 +80,7 @@ header li a {
   }
   
   .cancel-button:hover {
-    background-color: #41930b; /* Green */
+    background-color:rgb(223, 52, 52);
     color: white;
     padding: 15px 32px;
     padding-top: 1%;

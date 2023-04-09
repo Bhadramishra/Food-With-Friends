@@ -56,8 +56,6 @@ function submitPlan() {
 
 }
 
-<<<<<<< Updated upstream
-=======
 function cancelPlan() {
     localStorage.removeItem("email");
     localStorage.removeItem("withWho");
@@ -68,7 +66,6 @@ function cancelPlan() {
     window.location.replace("index.html");
 
 }
->>>>>>> Stashed changes
 
 function getElems() {
     var email = localStorage.getItem("email");

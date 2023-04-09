@@ -148,8 +148,14 @@ body {
 }
 
 
-.text{
-  padding-top: 10%;
+.you{
+  padding-right: 35%;
+  padding-top: 1%;
   padding-bottom: 0.1%;
+  font-size: 16px;
+}
+
+.your-match-name{
+  padding-left: 35%;
   font-size: 16px;
 }

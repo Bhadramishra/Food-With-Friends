@@ -54,6 +54,7 @@ function submitPlan() {
     window.location.replace("review.html");
 }
 
+
 }
 
 function cancelPlan() {
@@ -74,6 +75,12 @@ function getElems() {
     var inputMax = localStorage.getItem("inputMax");
     var time = localStorage.getItem("time");
     var date = localStorage.getItem("date");
+
+    //display date in MM/DD/YYYY format
+    var dateSplit = date.split("-");
+    date = dateSplit[1]+"/"+dateSplit[2]+"/"+dateSplit[0]
+
+    
     document.getElementById("email").innerHTML = email;
     document.getElementById("withWho").innerHTML = withWho;
     document.getElementById("meal").innerHTML = meal;
@@ -145,12 +152,11 @@ function matches() {
         } 
     }
 
-    console.log(matches);
-
     var names = "";
     for (i = 0; i < matches.length; i++) {
-        var name = matches[i].name;
-        names += "<li>"+name+"</li>";
+        var nameM = matches[i].name;
+        var emailM = matches[i].email;
+        names += "<li>"+nameM + " " + emailM +"</li>";
 
     }
 

@@ -19,11 +19,12 @@ function submitPlan() {
         alert("Email must be a valid Bowdoin email!")
         return false;
     }
+    
     if (email == "" || withWho == null || meal == null || inputMax == "" || time == null || date == "") {
         alert("All fields are required!")
         return false;
     }
-    else if (meal < 1) {
+    else if (inputMax < 1) {
         alert("Number of other people needs to be at least 1.")
         return false;
     }

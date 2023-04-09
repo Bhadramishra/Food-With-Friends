@@ -1,6 +1,8 @@
 
 /*everything below here is just setting up the page, so dont worry about it */
   
+
+
   
 @media (min-width: 768px) {
     .navbar{
@@ -33,23 +35,8 @@
     transition: .5s color ease-in-out;
   }
   
-  
   .page-title {
     opacity: .75 !important;
-  }
-
-  .details {
-        border: 3px solid black;  
-        background-color: #f4dddd;
-        border-radius: 20%;  
-        margin-left: 30%; 
-        margin-right: 30%;
-        margin-bottom: 2%;
-        margin-top:3%;
-        padding: 10%;
-        outline-offset: 0.5em;  
-       
-
   }
 
 .jumbotron{
@@ -59,14 +46,16 @@
     background: #f4dddd;
 }
 .form-inline{
-    text-align:left;
-    vertical-align:middle;
-    font-size: 16px;
-    }
-
+  text-align: left;
+  vertical-align:middle;
+  padding-left: 40%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
 
 #parent {
   width: 100%;
+  text-align: left;
   white-space: normal;
   overflow-x: visible;
 }
@@ -103,4 +92,17 @@
   font-size: 16px;
   border-radius: 12px;
   margin: 1%
+}
+.details {
+  border: 3px solid black;  
+  background-color: #f4dddd;
+  border-radius: 20%;  
+  margin-left: 30%; 
+  margin-right: 30%;
+  margin-bottom: 2%;
+  margin-top:3%;
+  padding: 10%;
+  outline-offset: 0.5em;  
+ 
+
 }

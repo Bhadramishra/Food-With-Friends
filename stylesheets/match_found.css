@@ -27,12 +27,29 @@ body {
     */
     
     /*for demo*/
-    margin-top:5%;
+     margin-top:5%;
    
     vertical-align:middle;
 
     
   }
+
+  .circle {
+    margin: auto;
+    margin-top:5%;
+    vertical-align:middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .circle img {
+    height: 100%;
+  }
+
  
   
   .caption {
@@ -127,6 +144,10 @@ body {
   font-size: 16px;
   border-radius: 12px;
   margin: 1%
+<<<<<<< Updated upstream
 }
 
 
+=======
+}
+>>>>>>> Stashed changes

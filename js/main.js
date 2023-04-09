@@ -122,9 +122,7 @@ function findMatch() {
 //this is how the matches are found (it iterates through the stored users, and compares to the values in local storage)
 function matches() {
     others = window.localStorage.getItem("otherUsers");
-    console.log(others);
     others = JSON.parse(others);
-    console.log(others);
     let matches = [];
 
     var myName = localStorage.getItem("name");
@@ -161,6 +159,9 @@ function matches() {
         } 
     }
 
+    if (matches.length == 0) {
+        window.replace(match_not_found.html);
+    }
     var names = "";
     for (i = 0; i < matches.length; i++) {
         var nameM = matches[i].name;
@@ -174,10 +175,11 @@ function matches() {
     date = dateSplit[1]+"/"+dateSplit[2]+"/"+dateSplit[0]
 
     document.getElementById("you").innerHTML = myName;
-    document.getElementById("matches").innerHTML = names;
+    //document.getElementById("matches").innerHTML = names;
     document.getElementById("Meal").innerHTML = "Meal: " + meal;
     document.getElementById("Date").innerHTML = "Date: " + date;
     document.getElementById("Time").innerHTML = "Time: " + time;
+
 
 }
 

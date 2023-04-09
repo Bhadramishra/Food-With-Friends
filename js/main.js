@@ -46,7 +46,7 @@ function submitPlan() {
         alert("Email must be a valid Bowdoin email!")
         return false;
     }
-    if (email == "" || withWho == null || meal == null || inputMax == null || time == null || date == "") {
+    if (email == "" || withWho == null || meal == null || inputMax == "" || time == null || date == "") {
         alert("All fields are required!")
         return false;
     }

@@ -27,32 +27,24 @@ body {
     
   }
 
-  .circle {
-    margin: auto;
+  .circle, .circle2 {
     margin-top:5%;
     vertical-align:middle;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     overflow: hidden;
   }
-  
+
+  .circle2 img {
+    height: 100%;
+
+
+  }
   .circle img {
     height: 100%;
   }
-
- 
   
-  .caption {
-    display:inline-block;
-    vertical-align:middle;
-    left: 50%;
-    margin-left:5%;
-    margin-right:5%;
-  }
-
   nav,
   header {
     background: none !important;
@@ -139,15 +131,15 @@ body {
   margin: 1%
 }
 
-
-.you{
-  padding-right: 35%;
-  padding-top: 1%;
-  padding-bottom: 0.1%;
-  font-size: 16px;
+.parent {
+  margin-left: 10%;
+  margin-top: 0%;
 }
-
-.your-match-name{
-  padding-left: 35%;
+.your-match-name {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 12%;
+  padding-right: 17%;
   font-size: 16px;
+  vertical-align: middle;
 }

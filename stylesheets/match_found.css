@@ -19,14 +19,6 @@ body {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    
-    /* commented for demo
-    float: left;
-    margin-left: 125px;
-    margin-top: 20px;
-    */
-    
-    /*for demo*/
      margin-top:5%;
    
     vertical-align:middle;

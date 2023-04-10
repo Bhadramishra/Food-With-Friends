@@ -20,8 +20,6 @@ function matches() {
     var date = localStorage.getItem("date");
     var meal = localStorage.getItem("meal");
 
-    console.log(matches.length);
-    console.log(others.length);
     for (let i = 0; i < others.length; i++) {
         if (matches.length == inputMax) {
             break; 
@@ -56,7 +54,6 @@ function matches() {
         names += "<li>"+nameM + " " + emailM +"</li>";
 
     }
-    
     //display date in MM/DD/YYYY format
     var dateSplit = date.split("-");
     date = dateSplit[1]+"/"+dateSplit[2]+"/"+dateSplit[0]

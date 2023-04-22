@@ -131,15 +131,26 @@ body {
   margin: 1%
 }
 
-.parent {
-  margin-left: 10%;
-  margin-top: 0%;
+/*at first this was parent*/
+.row {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15%;
+    margin-left: 15%;
+    vertical-align: middle;
+    font-size: 16px;
 }
-.your-match-name {
+
+/* .your-match-name {
   list-style-type: none;
   display: inline-block;
   padding-left: 13%;
   padding-right: 17%;
   font-size: 16px;
   vertical-align: middle;
+} */
+.your-match-name{
+  flex: 0 0 50%;
+  max-width: 50%;
 }

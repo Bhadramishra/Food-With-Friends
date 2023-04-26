@@ -31,6 +31,10 @@ function goHome() {
     window.location.href = "index.html"
 }
 
+function aboutUs() {
+    window.location.href = "about_us.html"
+}
+
 function schedulePage() {
     window.location.href = "meal-schedule.html"
 }
@@ -42,4 +46,12 @@ function closeFriends() {
 
 function getMeal() {
     window.location.href = "preference_form.html";
+}
+
+function shareFood() {
+  window.location.href = "share_food.html";
+}
+
+function foodfeed() {
+  window.location.href = "foodfeed.html";
 }

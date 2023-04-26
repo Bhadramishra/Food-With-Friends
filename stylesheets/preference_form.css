@@ -1,3 +1,14 @@
+.material-symbols-outlined {
+  padding: 0em;
+  padding-inline: 0.3em;
+  vertical-align: text-bottom;
+    float:left;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 30
+}
 
 /*everything below here is just setting up the page, so dont worry about it */
   

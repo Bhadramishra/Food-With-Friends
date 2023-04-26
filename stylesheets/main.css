@@ -8,6 +8,19 @@
 }
 
 
+.material-symbols-outlined {
+  padding: 0em;
+  padding-inline: 0.3em;
+  vertical-align: text-bottom;
+    float:left;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 30
+}
+
+
 
  /* This is all copy and pasted to change the colors for the button
  we need to play with these colors when we are ready

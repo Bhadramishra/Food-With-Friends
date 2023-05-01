@@ -1,10 +1,6 @@
 
 /*everything below here is just setting up the page, so dont worry about it */
-  
-
-
-  
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
     .navbar{
     border: transparent !important;
       text-align: center !important;
@@ -94,7 +90,7 @@
   font-size: 16px;
   border-radius: 12px;
   margin: 1%
-  margin-left: 30%
+  margin-left: 30%;
 }
 
 .edit-button{

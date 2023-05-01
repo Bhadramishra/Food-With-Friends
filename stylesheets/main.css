@@ -259,7 +259,7 @@
   border-radius: 50%;
   overflow: hidden;
   /* background-color: #A8C5FF; */
-  background-color: #fee6bd;
+  background-color: #A8C5FF;
   /* commented for demo
   float: left;
   margin-left: 125px;
@@ -278,7 +278,7 @@
 }
 
 .circular_image:hover {
-  background-color: #f9d089;
+  background-color: #79a1f1;
 }
 
 

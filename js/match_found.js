@@ -19,6 +19,13 @@ function matches() {
     var time = localStorage.getItem("time");
     var date = localStorage.getItem("date");
     var meal = localStorage.getItem("meal");
+    
+    // try to get the CLOSEFRIENDS working!!!!
+
+    if (withWho.includes("Close")) {
+        closeFriends()
+    }
+
 
     for (let i = 0; i < others.length; i++) {
         if (matches.length == inputMax) {
@@ -68,5 +75,69 @@ function matches() {
         window.location.href = "match_not_found.html";
         
     }
+
+}
+
+function closeFriends() {
+    friends = localStorage.getItem("friends")
+    friends = JSON.parse(friends);
+    let matches = [];
+
+    var myName = localStorage.getItem("name");
+    var email = localStorage.getItem("email");
+   
+    var inputMax = localStorage.getItem("inputMax");
+    var time = localStorage.getItem("time");
+    var date = localStorage.getItem("date");
+    var meal = localStorage.getItem("meal");
+
+    for (let i = 0; i < friends.length; i++) {
+        if (matches.length == inputMax) {
+            break; 
+        }
+        
+        
+
+        if (friends[i].date != date) {
+            continue;
+        }
+
+
+        if (friends[i].time != time) {
+            continue;
+        }
+
+        //when date and time match 
+        if (friends[i].numPpl > matches.length) {
+            matches.push(friends[i]);
+
+        } 
+    }
+
+
+    var names = "";
+    for (i = 0; i < matches.length; i++) {
+        var nameM = matches[i].name;
+        var emailM = matches[i].email;
+        names += "<li>"+nameM + " " + emailM +"</li>";
+
+    }
+    //display date in MM/DD/YYYY format
+    var dateSplit = date.split("-");
+    date = dateSplit[1]+"/"+dateSplit[2]+"/"+dateSplit[0]
+
+    document.getElementById("you").innerHTML = myName;
+    document.getElementById("matches").innerHTML = names;
+    document.getElementById("Meal").innerHTML = "Meal: " + meal;
+    document.getElementById("Date").innerHTML = "Date: " + date;
+    document.getElementById("Time").innerHTML = "Time: " + time;
+   
+   
+    if (matches.length == 0) {
+        window.location.href = "match_not_found.html";
+        
+    }
+
+
 
 }

@@ -280,7 +280,22 @@
 .circular_image:hover {
   background-color: #79a1f1;
 }
+table {
+  width: 50%;
+  align-items: center;
+}
+th, td {
+  color:#d871cb;
+  align-items: center;
+ 
+  
+ 
+}
 
+.addButton {
+  color: pink;
+
+}
 
 .caption {
   display:inline-block;

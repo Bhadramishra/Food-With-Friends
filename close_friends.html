@@ -20,7 +20,7 @@
 	
 </head>
 
-<body>
+<body onload = setTable()>
   
    <!-- Main jumbotron for a primary marketing message or call to action -->
    <div class="jumbotron">
@@ -52,18 +52,14 @@
     <h1 style="font-size: 50px"> Close Friends</h1>
   <div>
     <center>
-    <table>
-      <tr>
-        <td>Name</td>
-        <td>Add</td>
+      <table id="myTable">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Add to close friends</th>
+        </tr>
         
-      </tr>
-      <tr>
-        <td>Name</td>
-        <td>Add</td>
-       
-      </tr>
-    </table>
+      </table>
 
   </center>
 

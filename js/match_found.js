@@ -52,7 +52,7 @@ function matches() {
 
         } 
     }
-
+    window.localStorage.setItem("matches", JSON.stringify(matches)); 
 
     var names = "";
     for (i = 0; i < matches.length; i++) {
@@ -74,7 +74,7 @@ function matches() {
     if (matches.length == 0) {
         window.location.href = "match_not_found.html";
         
-    }
+    } 
 
 }
 
@@ -132,12 +132,10 @@ function closeFriends() {
     document.getElementById("Date").innerHTML = "Date: " + date;
     document.getElementById("Time").innerHTML = "Time: " + time;
    
+
    
     if (matches.length == 0) {
         window.location.href = "match_not_found.html";
         
     }
-
-
-
-}
+  }

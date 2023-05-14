@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" href="stylesheets/meal-schedule.css">
 </head>
-<body>
+<body onload=showMealPlan()>
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
@@ -50,7 +50,7 @@
     </div>
   </div>
 
-  <h1 style="font-size: 70px"> Your scheduled meal</h1>
+  <!-- <h1 style="font-size: 70px"> Your scheduled meal</h1>
   <div class scheduled-meal-display>
     <div class="rectangle">
         <div class="circular_image">
@@ -61,10 +61,27 @@
             <p style="font-size: 20px; text-align: left"> You have a meal with stephanie at 2.45 pm on 03/05/78!</p>
         </div>
     </div>
+  </div> -->
+
+  <h1 style="font-size: 70px"> Your scheduled meal</h1>
+  <div class scheduled-meal-display>
+    <div class="rectangle">
+        <div class="circular_image">
+                <img src="https://cdn-icons-png.flaticon.com/512/9105/9105090.png">
+              </div>
+        <div class="text-container">
+            <h1 style="font-size: 30px; text-align: left"> Your upcoming meal</h1>
+            <p id = matchname style="font-size: 20px; text-align: left"> Match name</p>
+            <p id = mealtype style="font-size: 20px; text-align: left"> Meal type</p>
+            <p id = mealdate style="font-size: 20px; text-align: left"> Meal date</p>
+            <p id = mealtime style="font-size: 20px; text-align: left"> Meal time</p>
+        </div>
+    </div>
   </div>
 
 
   <script src="js/main.js"></script>
+  <script src="js/meal-schedule.js"></script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -23,7 +23,8 @@ function matches() {
     // try to get the CLOSEFRIENDS working!!!!
 
     if (withWho.includes("Close")) {
-        closeFriends()
+        testFriends()
+        return;
     }
 
 
@@ -78,7 +79,7 @@ function matches() {
 
 }
 
-function closeFriends() {
+function testFriends() {
     friends = localStorage.getItem("friends")
     friends = JSON.parse(friends);
     let matches = [];
@@ -96,7 +97,8 @@ function closeFriends() {
             break; 
         }
         
-        
+       
+
 
         if (friends[i].date != date) {
             continue;
@@ -113,7 +115,7 @@ function closeFriends() {
 
         } 
     }
-
+    window.localStorage.setItem("matches", JSON.stringify(matches)); 
 
     var names = "";
     for (i = 0; i < matches.length; i++) {
@@ -132,10 +134,8 @@ function closeFriends() {
     document.getElementById("Date").innerHTML = "Date: " + date;
     document.getElementById("Time").innerHTML = "Time: " + time;
    
-
-   
     if (matches.length == 0) {
         window.location.href = "match_not_found.html";
         
-    }
+    } 
   }

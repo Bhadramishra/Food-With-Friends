@@ -141,12 +141,14 @@ form .options :where(.list, li),
   justify-content: center;
 }
 
-form .options p{
+
+form .options input{
   color: #595959;
   font-size: 15px;
   font-weight: 500;
   cursor: default;
 }
+
 
 form button{
   height: 53px;
@@ -166,7 +168,7 @@ form textarea:valid ~ button{
   background: #4267B2;
 }
 form textarea:valid ~ button:hover{
-  background: lightyellow;
+  background: #4267B2;
 }
 .container .audience{
   opacity: 0;

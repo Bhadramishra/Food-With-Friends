@@ -10,7 +10,7 @@
 function matches() {
     others = window.localStorage.getItem("otherUsers");
     others = JSON.parse(others);
-    let matches = [];
+    var matches = [];
 
     var myName = localStorage.getItem("name");
     var email = localStorage.getItem("email");

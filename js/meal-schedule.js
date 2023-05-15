@@ -1,14 +1,17 @@
 
 function showMealPlan() {
-    var schedule = localStorage.getItem("matches");
+    console.log((JSON.parse(localStorage.getItem('matches'))));
     var names = "";
-    for (i = 0; i < schedule.length; i++) {
-        var nameM = schedule[i].name;
-        names += nameM + " ";
+    for(i = 0; i < JSON.parse(localStorage.getItem('matches')).length; i++){
+        if (i != JSON.parse(localStorage.getItem('matches')).length-1) {
+            console.log(names += (JSON.parse(localStorage.getItem('matches')))[i].name+ " & ");
+        }
+        else{
+            console.log(names += (JSON.parse(localStorage.getItem('matches')))[i].name);
+        }
     }
-    document.getElementById("matchname").innerHTML = names;
-    document.getElementById("mealtype").innerHTML = "Meal: " + meal;
-    document.getElementById("mealdate").innerHTML = "Date: " + date;
-    document.getElementById("mealtime").innerHTML = "Time: " + time;
+    document.getElementById("matchname").innerHTML = ""+names;
+    document.getElementById("mealdate").innerHTML = "Date: " + JSON.parse(localStorage.getItem('matches'))[0].date;
+    document.getElementById("mealtime").innerHTML = "Time: " + JSON.parse(localStorage.getItem('matches'))[0].time;
 }
    

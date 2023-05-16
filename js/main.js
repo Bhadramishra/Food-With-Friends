@@ -66,9 +66,6 @@ class user {
      
     
 		});
-
-
-
     
 }
 
@@ -112,7 +109,7 @@ function getMeal() {
 }
 
 function shareFood() {
-  window.location.href = "post2.html";
+  window.location.href = "share_food.html";
 }
 
 function foodfeed() {

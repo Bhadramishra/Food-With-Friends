@@ -11,6 +11,8 @@ For our initial code approach we decided to utilize key class learnings as decri
 
 Which can be accessed using the following link: 
 
+# GitHub Link
+https://github.com/Bhadramishra/Food-With-Friends.git
 
 # TO-DOs:
 

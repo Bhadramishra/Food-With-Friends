@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-  <title>Meal Schedule</title>
+  <title>Home Page</title>
   <link rel="icon" type = "image/x-icon" href ="favicon.ico">
 
 
-  <link rel="stylesheet" href="stylesheets/meal-schedule.css">
+  <link rel="stylesheet" href="stylesheets/post2.css">
 </head>
-<body onload=console.log(showMealPlan())>
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+<body>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
     <div class="container">
         <center>
             <div class="container-fluid">
@@ -44,52 +44,57 @@
                         </span>
                         Close Friends</a></li>
                     </ul>
-                  </div>
-                </nav>   
-    </center> 
-    </div>
-  </div>
-
-  </div>
-
-  <h1 style="font-size: 70px"> Your scheduled meal</h1>
-  <div class scheduled-meal-display>
-    <div class="rectangle">
-        <div class="circular_image">
-                <img src="https://cdn-icons-png.flaticon.com/512/9105/9105090.png">
-              </div>
-        <div class="text-container">
-            <p id = matchname style="font-size: 30px; text-align: left ;font-family: inherit"></p>
-            <p id = mealdate style="font-size: 25px; text-align: left; font-family: inherit">Your first meal will show up here!</p>
-            <p id = mealtime style="font-size: 25px; text-align: left; font-family: inherit"></p>
+                </div>
+              </nav>        
+            </div>
         </div>
     </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <button type="button" onclick = scheduleMeal() class = "schedule">Schedule a meal</button>
- 
-  
 
 
-  <script src="js/main.js"></script>
-  <script src="js/meal-schedule.js"></script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-   <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
- 
+<div class = "box"> 
+    <div class="wrapper">
+        <section class="post">
+          <header>Share Your Food</header>
+          <!---- <h1> Share Your Food</h1> -->
+    <form action="#">
+        <div class="content">
+          <div class="details">
+            <p>username</p>
+            <div class="privacy">
+                <span>
+                <select name = "visible" id = "visible" style = "padding: 5%;">
+                    <option value="friends">Close Friends</option>
+                    <option value="anyone">Anyone</option>
+                  </select>
+                </span>
+            </div>
+        </div>
+      </div>
 
-  <body>
-  <html>  
 
+      <form>
+        <!--Name-->
+        <div class="form-group">
+          <label> Location: </label>
+        <div class="form-group">
+          <input type="location" class="form-control" id="location" placeholder="Park Row Apt 4D">
+        </div>
+    
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Bowdoin Email address:</label>
+        </div>
+          <input type="number" class="form-control" id="number" placeholder="5">
+        </div>
+    
+        
+
+      <textarea placeholder="What food would you like to share?" required></textarea>
+      <div class="options">
+          <div class="icon1"> 
+            <input type="file" id="myFile" style="hidden"/>
+         </div>
+      </div>
+      <button>Post</button>
+    </form>
+</div>
+</html>

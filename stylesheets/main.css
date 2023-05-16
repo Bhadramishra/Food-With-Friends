@@ -191,7 +191,7 @@
   border-radius: 50%;
   overflow: hidden;
   /* background-color: #A8C5FF; */
-  background-color: #78ebf6;
+  background-color: #A8C5FF;;
   border-color: #212529;
   /* commented for demo
   float: left;
@@ -211,7 +211,7 @@
 }
 
 .circular_image:hover {
-  background-color: #4adce9;
+  background-color: #79a1f1;
 }
 table {
   width: 50%;

@@ -112,7 +112,7 @@ function getMeal() {
 }
 
 function shareFood() {
-  window.location.href = "share_food.html";
+  window.location.href = "post2.html";
 }
 
 function foodfeed() {

@@ -21,7 +21,7 @@ let image2 = "https://www.chewoutloud.com/wp-content/uploads/2015/03/Fudgy-Brown
 lunch = new createPost("Bhadra", info, "All", image_link)
 snack = new createPost("Kavya", info2, "Friends Only", image2)
 
-  function setTable() {
+  function setFeed() {
     const users = [lunch, snack]
    
     const table = document.getElementById('myTable');
@@ -49,10 +49,11 @@ snack = new createPost("Kavya", info2, "Friends Only", image2)
 		users.forEach(item => {
 			const row = document.createElement('tr');
 			const nameCell = document.createElement('td');
+            const imageCell = document.createElement('img');
 			const infoCell = document.createElement('td');
             const shareCell = document.createElement('td');
-			const imageCell = document.createElement('img');
-            const likeButton = document.createElement("button");
+			
+            const likeButton = document.createElement('button');
             
             const comment = document.createElement("button");
             
@@ -64,13 +65,16 @@ snack = new createPost("Kavya", info2, "Friends Only", image2)
             shareCell.innerText = item.shareWith
             imageCell.src = item.image
             likeButton.innerText = "Like";
+            likeButton.classList.add("like-button");
             comment.innerText = "Comment";
+            comment.classList.add("comment-button")
      
 
 			row.appendChild(nameCell);
+            row.appendChild(imageCell);
 			row.appendChild(infoCell);
             row.appendChild(shareCell);
-			row.appendChild(imageCell);
+			
             row.append(likeButton, comment);
             
 			table.appendChild(row);

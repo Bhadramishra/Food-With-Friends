@@ -9,7 +9,7 @@ Link: https://www.codingnepalweb.com/facebook-post-box-clone-html-css/
 # Description 
 For our initial code approach we decided to utilize key class learnings as decribed in our final paper for the project. 
 
-Which can be accessed using the following link: 
+Which can be accessed using the following link: https://docs.google.com/document/d/1RItdRKjXVQ9NND7EqkGjtKmYusYK_zU-4WpUQ2RE2D0/edit?usp=sharing
 
 # GitHub Link
 https://github.com/Bhadramishra/Food-With-Friends.git

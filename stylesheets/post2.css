@@ -180,6 +180,8 @@
     font-weight: 500;
     text-align: center;
     align-items: center;
+    font-weight: 10;
+    
   }
 
 
@@ -192,6 +194,7 @@
     border: solid white;
     border-radius: 7px;
     border-width: 89px;
+    
   }
 
   
@@ -202,6 +205,8 @@
     padding: 17px 0;
     text-align: center;
     border-bottom: 1px solid #bfbfbf;
+    font-weight: 10;
+    
   }
   
   .post form{
@@ -224,6 +229,8 @@
     width: 500px;
     background: pink;
     padding: 10%;
+    font-weight: 10;
+    
   }
 
 /* this is for the text box placement*/
@@ -231,18 +238,23 @@
     width: 100%;
     outline: none;
     border: none;
+    
   }
   form textarea{
     resize: none;
     font-size: 18px;
     margin-top: 30px;
     min-height: 100px;
+    font-weight: 10;
+    
   }
   form textarea::placeholder{
     color: #858585;
+    
   }
   form textarea:focus::placeholder{
     color: #b3b3b3;
+    
   }
 
   /* size and design of post button */
@@ -257,12 +269,18 @@
     border-radius: 7px;
     background: #e2e5e9;
     transition: all 0.3s ease;
+    font-weight: 10;
+    
   }
   form textarea:valid ~ button{
     color: #fff;
     cursor: pointer;
     background: #4267B2;
+    font-weight: 10;
+    
   }
   form textarea:valid ~ button:hover{
     background: #4267B2;
+    font-weight: 10;
+    
   }

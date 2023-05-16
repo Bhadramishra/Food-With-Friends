@@ -25,6 +25,7 @@
   body {
     font-weight:600;
     text-align:center !important;
+    font-weight: 10;
   }
 
   nav,
@@ -63,6 +64,7 @@ header li a {
     vertical-align:middle;
     padding-top: 1%;
     padding-bottom: 1%;
+    font-weight: 10;
 }
 
 .submit-button{
@@ -78,6 +80,7 @@ header li a {
   font-size: 16px;
   border-radius: 12px;
   position: center;
+  font-weight: 10;
 }
 
 
@@ -92,5 +95,6 @@ header li a {
   font-size: 16px;
   border-radius: 12px;
   position: center;
+  font-weight: 10;
     
   }

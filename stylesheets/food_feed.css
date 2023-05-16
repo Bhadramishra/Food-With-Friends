@@ -1,5 +1,5 @@
 button {
-    background-color: rgb(213, 121, 121); 
+    background-color: #79a1f1; 
     border: 2 black;
     color: black;
     padding: 15px 32px;
@@ -10,6 +10,7 @@ button {
     font-size: 16px;
     border-radius: 12px;
     margin-top: 5%;
+    font-weight: 10;
 }
 .jumbotron{
   background-color: #f4dddd;
@@ -19,13 +20,13 @@ button {
   background: #f4dddd;
 }
 .like-button {
-    color: rgb(254, 255, 255);
+    color: rgb(255, 254, 254);
     
-    background-color: #B17676;
+    background-color: #9cbbf8;
 }
 .comment-button {
     color: rgb(254, 255, 255);
-    background-color: #ffb3b3;
+    background-color: #9cbbf8;
     
 }
 
@@ -53,7 +54,7 @@ font-variation-settings:
   }
   
   table {
-    border: 20px solid rgba(15, 98, 157, 0.666);  
+    border: 20px solid #eaa4a4;  
     margin-left: auto;  
     margin-right: auto;  
     border-collapse: collapse;    
@@ -63,7 +64,7 @@ font-variation-settings:
     
   }
   th, td {
-    border: 4px solid rgba(15, 98, 157, 0.666);  
+    border: 4px solid #eaa4a4;
     color:#121313;
     margin-left: auto;  
     margin-right: auto;  
@@ -71,6 +72,7 @@ font-variation-settings:
     width: auto;  
     text-align: auto;  
     font-size: 20px;  
+    font-weight: 10;
 
     
     

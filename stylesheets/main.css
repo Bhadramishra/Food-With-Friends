@@ -176,6 +176,8 @@
     line-height: 100px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    font-weight: 10;
+    
     
 }
 
@@ -253,6 +255,8 @@ th, td {
   text-align: center;
   margin: 4%;
   margin-top: 0.02%;
+  font-weight: 10;
+    
   
 }
 
@@ -261,6 +265,8 @@ th, td {
   font-size: 25px;
   font-family: gill sans,sans-serif;
   text-align: center;
+  font-weight: 10;
+    
 }
 
 .wrapper:hover {

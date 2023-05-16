@@ -83,7 +83,9 @@ body {
 .wrapper {
     display: inline-block;
     text-align: center;
-    margin: 1.5%;    
+    margin: 1.5%; 
+    font-weight: 10;
+       
 }  
 
  .home-button{
@@ -126,6 +128,8 @@ body {
   font-size: 16px;
   border-radius: 12px;
   margin: 1%; 
+  font-weight: 10;
+    
 }
 
 .cancel-button:hover{
@@ -151,11 +155,15 @@ body {
     margin-left: 15%;
     vertical-align: middle;
     font-size: 16px;
+    font-weight: 10;
+    
 }
 
 .your-match-name{
   flex: 0 0 50%;
   max-width: 50%;
+  font-weight: 10;
+    
 }
 
 /* This is the CSS stuff copy and pasted for the nav bar

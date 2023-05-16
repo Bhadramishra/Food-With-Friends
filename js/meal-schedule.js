@@ -1,18 +1,6 @@
 
 function showMealPlan() {
 
-
-
-
-
-
-
-
-
-
-
-
-
     console.log((JSON.parse(localStorage.getItem('matches'))));
     var names = "";
     for(i = 0; i < JSON.parse(localStorage.getItem('matches')).length; i++){
@@ -26,6 +14,6 @@ function showMealPlan() {
     document.getElementById("matchname").innerHTML = ""+names;
     document.getElementById("mealdate").innerHTML = "Date: " + JSON.parse(localStorage.getItem('matches'))[0].date;
     document.getElementById("mealtime").innerHTML = "Time: " + JSON.parse(localStorage.getItem('matches'))[0].time;
-    
+
 }
    

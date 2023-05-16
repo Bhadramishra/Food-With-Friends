@@ -7,6 +7,18 @@
 
 //this is called upon match found loading
 //this is how the matches are found (it iterates through the stored users, and compares to the values in local storage)
+
+
+function checkMatchFound(){
+    if (JSON.parse(localStorage.getItem('matches')).length === 0){
+     window.location.href = "match_not_found.html"
+    }
+    else {
+      window.location.href = "match_found.html"
+  }
+}
+
+
 function matches() {
     others = window.localStorage.getItem("otherUsers");
     others = JSON.parse(others);
@@ -53,31 +65,37 @@ function matches() {
 
         } 
     }
-    window.localStorage.setItem("matches", JSON.stringify(matches)); 
+    window.localStorage.setItem("matches", JSON.stringify(matches));
+}
 
+function showMatches(){
+    // console.log(JSON.parse(localStorage.getItem('matches')));
     var names = "";
-    for (i = 0; i < matches.length; i++) {
-        var nameM = matches[i].name;
-        var emailM = matches[i].email;
+    var match = JSON.parse(localStorage.getItem('matches'));
+    for (i = 0; i < JSON.parse(localStorage.getItem('matches')).length; i++) {
+        var nameM = JSON.parse(localStorage.getItem('matches'))[i].name;
+        var emailM = JSON.parse(localStorage.getItem('matches'))[i].email;
         names += "<li>"+nameM + " " + emailM +"</li>";
 
     }
     //display date in MM/DD/YYYY format
-    var dateSplit = date.split("-");
+    var dateSplit = match[0].date.split("-");
     date = dateSplit[1]+"/"+dateSplit[2]+"/"+dateSplit[0]
 
-    document.getElementById("you").innerHTML = myName;
+    document.getElementById("you").innerHTML = localStorage.getItem("name");
     document.getElementById("matches").innerHTML = names;
-    document.getElementById("Meal").innerHTML = "Meal: " + meal;
-    document.getElementById("Date").innerHTML = "Date: " + date;
-    document.getElementById("Time").innerHTML = "Time: " + time;
-   
-    if (matches.length == 0) {
-        window.location.href = "match_not_found.html";
-        
-    } 
-
+    document.getElementById("Meal").innerHTML = "Meal: " + localStorage.getItem("meal");
+    document.getElementById("Date").innerHTML = "Date: " + match[0].date;
+    document.getElementById("Time").innerHTML = "Time: " + match[0].time;
 }
+
+//     if (matches.length == 0) {
+//         window.location.href = "match_not_found.html";
+        
+//     } 
+// }
+
+
 
 function testFriends() {
     friends = localStorage.getItem("friends")
@@ -97,8 +115,6 @@ function testFriends() {
             break; 
         }
         
-       
-
 
         if (friends[i].date != date) {
             continue;

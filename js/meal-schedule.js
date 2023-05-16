@@ -17,3 +17,6 @@ function showMealPlan() {
 
 }
    
+function scheduleMeal(){
+    window.location.href = "preference_form.html";
+}

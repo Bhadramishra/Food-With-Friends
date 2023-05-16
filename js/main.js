@@ -12,19 +12,7 @@ class user {
     }
   }
 
-  class createPost {
-    constructor(name, information, numPpl, email, date, time) {
-      this.name = name; 
-      this.withWho = withWho; 
-      this.numPpl = numPpl;
-      this.email = email;
-      this.date = date;  
-      this.time = time; 
-    }
-    getName(){
-      return this.name
-    }
-  }
+  
   
   Kavya = new user("Kavya", "Close", 5, "k@bowdoin.edu", "2023-04-08", "11:00am" );
   Saraswati = new user("Saraswati", "Anyone", 2, "s@bowdoin.edu", "2023-05-08", "11:00am" );

@@ -2,3 +2,135 @@ button {
     font: inherit;
     text-align: center;
 }
+.jumbotron{
+  background-color: #f4dddd;
+  margin-bottom: 1.5%;
+}
+.jumbotron .container {
+  background: #f4dddd;
+}
+
+
+.material-symbols-outlined {
+padding: 0em;
+padding-inline: 0.3em;
+vertical-align: text-bottom;
+  float:left;
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 30
+}
+
+
+
+@media (min-width: 768px) {
+    .navbar{
+    border: transparent !important;
+      text-align: center !important;
+      float: none;
+      display: inline-block;
+    }
+  }
+  
+  table {
+    border: 20px solid rgba(15, 98, 157, 0.666);  
+    margin-left: auto;  
+    margin-right: auto;  
+    border-collapse: collapse;    
+    width: auto;  
+    text-align: center;  
+    font-size: 10px;  
+    
+  }
+  th, td {
+    border: 4px solid rgba(15, 98, 157, 0.666);  
+    color:#121313;
+    margin-left: auto;  
+    margin-right: auto;  
+    border-collapse: collapse;    
+    width: auto;  
+    text-align: auto;  
+    font-size: 20px;  
+
+    
+    
+    
+   
+  }
+
+  img {
+    width: 100px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+
+
+  body {
+    font: weight 800px;;
+    text-align:center !important;
+  }
+  
+  nav,
+  header {
+    background: none !important;
+    text-transform: uppercase;
+  }
+  
+  nav li,
+  header li {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  
+  nav li a,
+  header li a {
+    transition: .5s color ease-in-out;
+  }
+  
+  
+  .page-title {
+    opacity: .75 !important;
+  }
+
+  .jumbotron{
+    background-color: #f4dddd;
+  }
+  .jumbotron .container {
+    background: #f4dddd;
+  }
+
+  @media (min-width: 768px) {
+    .navbar{
+    border: transparent !important;
+      text-align: center !important;
+      float: none;
+      display: inline-block;
+    }
+  }
+
+  p {
+    display: inline-block;
+  }
+  
+  body {
+    font-weight:600;
+    text-align:center !important;
+  }
+  
+  nav, header {
+    background: none !important;
+    text-transform: uppercase;
+  }
+  
+  nav li,
+  header li {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  
+  nav li a,
+  header li a {
+    transition: .5s color #B17676 ease-in-out;
+  }
